@@ -1,0 +1,312 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* header list*/
+.list{
+    display: flex;
+    justify-content: space-evenly;
+    object-fit: contain;
+    margin-right: 17px;
+    align-items: center;
+}
+
+/*for list items*/
+.item{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px 15px;
+    font-size: 23px;
+    color: gray;
+    white-space: nowrap;
+}
+
+.item:hover{
+    cursor: pointer;
+}
+
+/*header logo */
+.logo{
+    height: 80px;
+    width: 200px;
+    object-fit: contain;
+}
+
+header{
+    overflow-y: hidden;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;    
+}
+
+header::-webkit-scrollbar {
+    display: none;
+  }
+
+
+/* Login Button */  
+.btnn{
+    height: 33px;
+    width: 73px;
+    border-radius: 20px;
+    background-color: #00cb74;
+    color: white;
+    border: none;
+    margin: 3px 4px;
+
+}
+
+.btnn:hover{
+    cursor: pointer;
+}
+
+/* For home*/
+.active{
+    color: black;
+}
+
+
+
+/*big tiles*/
+.tiles{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #f0f4f7
+    
+}
+
+select{
+    border: none;
+    margin-left: -16px;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+.spacer{
+    margin-top: 10px;
+}
+
+.tile{
+    height: 200px;
+    width: 400px;
+    margin: 10px 10px;
+    margin-top: 35px;
+}
+
+.tile:hover{
+    cursor: pointer;
+}
+
+
+/*short tiles*/
+.shorttile{
+    max-height: 150px;
+    max-width: 200px;
+    margin: 15px 15px;
+    margin-bottom: 36px;
+}
+
+.shorttiles{
+    background-color:#f0f4f7;
+    display: flex;
+    
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.shorttile:hover{
+    cursor: pointer;
+}
+
+/*footer*/
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 15px;
+   
+}
+
+footer>img{
+    height: 100px;
+    width: 200px;
+}
+
+.colhead{
+    font-weight: bold;
+}
+
+.col3{
+    color: grey;
+    font-weight: 600;
+}
+.dark{
+    font-weight: 700;
+}
+/*media queries*/
+
+@media only screen and (max-width:833px) {
+    .list{
+       
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: visible;
+    }
+
+    .item{
+        font-size: 17px;
+    }
+    
+    
+}
+
+
+
+.address{
+    max-width: 45ch;
+}
+
+.bottomtext{
+    text-align: center;
+    margin-bottom: 9px;
+}
+
+
+/* Modal*/
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  /* Modal Content*/
+  .modal-content {
+    background-color:#f0f4f7;
+    margin: 12% auto; 
+
+    border: 1px solid #888;
+    width: 62%; 
+    
+  }
+  
+  
+
+  .modalimage{
+    max-height: 354px;
+    max-width: 400px;
+    margin: 27px;
+  }
+
+  .mcontent{
+      display: flex;
+      justify-content: space-between;
+     
+  
+  }
+
+  form{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 66%;
+    height: 430px;
+    background-color: white;
+    border-top-left-radius: 48px;
+    border-bottom-left-radius: 48px;
+  }
+
+  .logincreate{
+      color: grey;
+      font-size: 22px;
+      font-weight: 400;
+      margin: 0px 34px;
+  }
+
+  .enterphonenumber{
+      color:grey;
+      margin: 21px 34px;
+  }
+
+  form>input{
+      width: 68%;
+      height: 8%;
+      margin-bottom: 26px;
+      border: 1px solid #00cb74;
+  }
+
+  .info{
+    max-width: 45ch;
+    font-size: 13px;
+    margin-top: 38px;
+    text-align: center;
+    margin-left: 62px;
+   
+  }
+
+  form>p,input,button,h1{
+    margin-left: 33px;
+  }
+  .formbtn{
+    background-color: #00cb74;
+    color: white;
+    width: 69%;
+    height: 32px;
+    border-radius: 2px;
+    border: none;
+
+  }
+
+  .formbtn:hover{
+      cursor: pointer;
+  }
+
+  form>h1{
+
+  
+    margin-top: 47px;  
+}
+
+
+@media only screen and (max-width:1293px)
+{
+    .mcontent{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .modal-content{
+        height: 600px;
+    }
+    .modalimage{
+        height: 200px;
+        width: inherit;
+    }
+    form{
+        height: 344px;
+        width: inherit;
+        font-size: 15px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+    .info{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+  
